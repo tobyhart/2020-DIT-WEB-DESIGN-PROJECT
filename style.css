@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+nav li, nav a {
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+}
