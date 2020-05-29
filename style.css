@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
+    text-decoration: none;
 }
 
 nav li, nav a {
@@ -12,4 +13,5 @@ nav li, nav a {
 
 nav ul {
     float: right;
+    
 }
