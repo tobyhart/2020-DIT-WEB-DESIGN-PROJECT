@@ -3,8 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
     text-decoration: none;
+}
+
+/* Nav Bar
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav li, nav a {
@@ -14,4 +22,65 @@ nav li, nav a {
 nav ul {
     float: right;
     
+}
+
+nav a {
+    margin: 2.8vw 2.8vw;
+    font-size: 1.6vw;
+    letter-spacing: 0.35vw;
+    color: #606060;
+}
+
+nav a:hover {
+    color: #aaaaaa;
+}
+
+.login {
+    margin-right: 2.8vw;
+}
+
+#logo {
+    width: 13vw;
+    margin: 0vw 3vw;
+    float: left;
+}
+
+
+/* Main Hero Image Section
+*/
+
+.hero-img {
+    background-image: url(Images/AI5.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero-img h1, .hero-img p, .hero-img a {
+    position: absolute;
+    margin: 35vh 6vw;
+    font-size: 4vw;
+    color: #444444;
+}
+
+.hero-img p {
+    margin-top: 45vh;
+    font-size: 1.5vw;
+    letter-spacing: 0.15vw;
+}
+
+.hero-img a {
+    margin-top: 50vh;
+    font-size: 1.2vw;
+    color: #3d8af7;
+}
+
+.hero-img hr {
+    margin-top: 56vh;
+    background-color: black;
+    height: 3px;
+    position: absolute;
+    width: 5%;
+    margin-left: 6vw;
 }
