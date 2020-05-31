@@ -4,9 +4,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    color: #000000;
 }
 
-/* Nav Bar
+/* Nav Bar ------------------------------------------------------
 */
 
 header {
@@ -46,7 +47,7 @@ nav a:hover {
 }
 
 
-/* Main Hero Image Section
+/* Main Hero Image Section ------------------------------------------------------
 */
 
 .hero-img {
@@ -54,33 +55,237 @@ nav a:hover {
     height: 100vh;
     background-position: center;
     background-size: cover;
+    color: #444444;
 
 }
 
-.hero-img h1, .hero-img p, .hero-img a {
+.hero-img h1{
     position: absolute;
-    margin: 35vh 6vw;
-    font-size: 4vw;
+    font-size: 5vw;
+    margin: 38.5vh 6vw;
     color: #444444;
 }
 
 .hero-img p {
-    margin-top: 45vh;
-    font-size: 1.5vw;
+    position: absolute;
+    margin: 51vh 6vw;
+    font-size: 1.8vw;
     letter-spacing: 0.15vw;
+    color: #444444;
 }
 
-.hero-img a {
-    margin-top: 50vh;
-    font-size: 1.2vw;
+#hero-img-learnmore {
+    position: absolute;
+    margin: 56.5vh 6vw;
+    font-size: 1.4vw;
     color: #3d8af7;
+    font-weight: bold;
 }
 
 .hero-img hr {
-    margin-top: 56vh;
+    margin-top: 62vh;
     background-color: black;
-    height: 3px;
+    height: 2px;
     position: absolute;
+    border: none;
     width: 5%;
     margin-left: 6vw;
+}
+
+
+
+/* Homepage Second product Section ------------------------------------------------------
+*/
+
+.section1-img {
+    background-image: url(Images/AI_Second_section_Image.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.section1-txt {
+    height: 100vh;
+    position: relative;
+  }
+  
+.section1-txt h1 {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.section1-txt p {
+    margin: 0;
+    position: absolute;
+    font-size: 1.8vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#section1-learnmore {
+    margin: 0;
+    position: absolute;
+    font-size: 1.4vw;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #3d8af7;
+}
+.section1-txt hr {
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    border: none;
+    width: 5%;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Homepage Shop Header Section ------------------------------------------------------
+*/
+
+.homepage-shop {
+    height: 50vh;
+    position: relative;
+  }
+  
+.homepage-shop h1, .homepage-shop p, #homepage-shop-learnmore {
+    position: absolute;
+    margin: 0;
+    font-size: 5vw;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.homepage-shop p {
+    font-size: 1.8vw;
+    top: 53%;
+}
+
+#homepage-shop-learnmore {
+    font-size: 1.4vw;
+    top: 64%;
+    color: #3d8af7;
+    font-weight: bold;
+}
+
+.homepage-shop hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Homepage Fayonette Shop Section ------------------------------------------------------
+*/
+
+.fayonette-shop {
+    height: 100vh;
+    position: relative;
+}
+
+.fayonette-shop img {
+    float: right;
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+}
+  
+.fayonette-shop h1, .fayonette-shop p, #fayonette-learnmore {
+    position: absolute;
+    margin: 0;
+    font-size: 3.5vw;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+} 
+
+.fayonette-items p {
+    font-size: 1.5vw;
+    top: 51.5%;
+}
+
+#fayonette-learnmore {
+    font-size: 1.2vw;
+    top: 57%;
+    color: #3d8af7;
+    font-weight: bold;
+}
+
+.fayonette-shop hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 60.5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Homepage Corpalytics Shop Section ------------------------------------------------------
+*/
+
+.corpalytics-shop {
+    height: 100vh;
+    position: relative;
+}
+
+.corpalytics-items, .corpalytics-shop img {
+    display: inline-block;
+}
+
+.corpalytics-shop img {
+    float: left;
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+}
+  
+.corpalytics-shop h1, .corpalytics-shop p, #corpalytics-learnmore {
+    position: absolute;
+    margin: 0;
+    font-size: 3.5vw;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+} 
+
+.corpalytics-items p {
+    font-size: 1.5vw;
+    top: 52%;
+    width: 100%;
+    text-align: center;
+}
+
+#corpalytics-learnmore {
+    font-size: 1.2vw;
+    top: 57%;
+    color: #3d8af7;
+    font-weight: bold;
+}
+
+.corpalytics-shop hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 60.5%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
