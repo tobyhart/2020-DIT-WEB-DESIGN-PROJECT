@@ -11,8 +11,6 @@
 */
 
 header {
-    position: fixed;
-    top: 0;
     width: 100%;
 }
 
@@ -40,10 +38,10 @@ nav a:hover {
     margin-right: 2.8vw;
 }
 
-#logo {
+.logo {
+    position: absolute;
     width: 13vw;
     margin: 0vw 3vw;
-    float: left;
 }
 
 
@@ -55,20 +53,17 @@ nav a:hover {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    color: #444444;
-
 }
 
 .hero-img h1{
     position: absolute;
     font-size: 5vw;
     margin: 38.5vh 6vw;
-    color: #444444;
 }
 
 .hero-img p {
     position: absolute;
-    margin: 51vh 6vw;
+    margin: 51.5vh 6vw;
     font-size: 1.8vw;
     letter-spacing: 0.15vw;
     color: #444444;
@@ -76,14 +71,14 @@ nav a:hover {
 
 #hero-img-learnmore {
     position: absolute;
-    margin: 56.5vh 6vw;
+    margin: 57.5vh 6vw;
     font-size: 1.4vw;
     color: #3d8af7;
     font-weight: bold;
 }
 
 .hero-img hr {
-    margin-top: 62vh;
+    margin-top: 63vh;
     background-color: black;
     height: 2px;
     position: absolute;
@@ -141,7 +136,7 @@ nav a:hover {
     position: absolute;
     border: none;
     width: 5%;
-    top: 59%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -152,7 +147,7 @@ nav a:hover {
 */
 
 .homepage-shop {
-    height: 50vh;
+    height: 65vh;
     position: relative;
   }
   
@@ -167,12 +162,12 @@ nav a:hover {
 
 .homepage-shop p {
     font-size: 1.8vw;
-    top: 53%;
+    top: 51%;
 }
 
 #homepage-shop-learnmore {
     font-size: 1.4vw;
-    top: 64%;
+    top: 60%;
     color: #3d8af7;
     font-weight: bold;
 }
@@ -183,7 +178,7 @@ nav a:hover {
     height: 2px;
     position: absolute;
     width: 5%;
-    top: 71%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -268,7 +263,7 @@ nav a:hover {
 .corpalytics-items p {
     font-size: 1.5vw;
     top: 52%;
-    width: 100%;
+    width: 50%;
     text-align: center;
 }
 
@@ -288,4 +283,187 @@ nav a:hover {
     top: 60.5%;
     left: 75%;
     transform: translate(-50%, -50%);
+}
+
+
+/* Homepage More Products Section ------------------------------------------------------
+*/
+
+.more-products {
+    height: 90vh;
+    position: relative;
+}
+
+.more-products img {
+    height: 13vw;
+    width: 13vw;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.more-products-flexbox {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 33vh 6vw;
+}
+  
+.more-products h4 {
+    position: absolute;
+    margin: 0;
+    font-size: 3.5vw;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.more-products hr {
+    background-color: white;
+    border: none;
+}
+
+.more-products h3 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 1vh 0 1vh;
+}
+
+#products-learnmore {
+    color: #3d8af7;
+    font-size: 1.2vw;
+}
+
+
+/* Footer ------------------------------------------------------
+*/
+
+footer {
+    height: 70vh;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.container {
+    padding: 4vh 0vw;
+    display: grid;
+    grid-template-columns: 22.7vw 22.7vw 22.7vw 22.7vw;
+    grid-template-rows: 27vh 27vh;
+    justify-content: center;
+}
+
+.container div {
+    padding: 3vh 4.9vw;
+}
+
+.container h5 {
+    font-size: 1.5vw;
+    color: #606060;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.container li {
+    font-size: 1.3vw;
+    margin-top: 1.5vh;
+    color: #7a7a7a;
+}
+
+.container a {
+    font-size: 1.3vw;
+    margin-top: 1.5vh;
+    color: #7a7a7a;
+}
+
+footer hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    margin: 0 auto;
+    width: 81%;
+}
+
+#flag {
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 1vw;
+    transform: translate(-20%, 25%);
+}
+
+#nz img, #nz p {
+    display: inline-block;
+}
+
+#nz, #copyright {
+    display: inline-block;
+    color: #7a7a7a;
+    padding: 1vh 9.5vw;
+    font-size: 1.2vw;
+}
+
+#nz p {
+    color: #7a7a7a;
+}
+
+#nz {
+    float: right;
+}
+
+
+
+
+
+/* ava.html
+*/
+
+
+
+
+
+/* Homepage Second product Section ------------------------------------------------------
+*/
+
+.ava-hero-img {
+    background-image: url(Images/AVA_Mixed.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.ava-hero-txt {
+    height: 100vh;
+    position: relative;
+  }
+
+#human {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #444444;
+} 
+
+#robot {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #ebebeb;
+}
+
+#ava-page-nav nav a {
+    color: rgb(175, 175, 175)
+}
+
+#ava-page-nav nav a:hover {
+    color: #c4c4c4;
+}
+
+#ava-page-nav #ava-page-nav-shop {
+    color: rgb(218, 218, 218);
 }
