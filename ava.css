@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Nav Bar ------------------------------------------------------
+*/
+
+header {
+    width: 100%;
+}
+
+nav li, nav a {
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+}
+
+nav a {
+    margin: 2.8vw 2.8vw;
+    font-size: 1.6vw;
+    letter-spacing: 0.35vw;
+    color: rgb(175, 175, 175);
+}
+
+nav a:hover {
+    color: #c4c4c4;
+}
+
+.login {
+    margin-right: 2.8vw;
+}
+
+.logo {
+    position: absolute;
+    width: 13vw;
+    margin: 0vw 3vw;
+}
+
+#ava-page-nav-shop {
+    color: rgb(218, 218, 218);
+}
+
+
+/* Ava page Hero Image Section ------------------------------------------------------
+*/
+
+.ava-hero-img {
+    background-image: url(Images/AVA_Mixed.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.ava-hero-txt {
+    height: 100vh;
+    position: relative;
+  }
+
+#human {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #444444;
+} 
+
+#robot {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #c0c0c0;
+}
+
+
+/* Ava Page Text Block Section ------------------------------------------------------
+*/
+
+.ava-text-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.ava-text-block h1{
+    font-size: 5vw;
+}
+.ava-text-block h2{
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+}
+.ava-text-block p{
+    font-weight: 500;
+    padding: 1vw 0;
+    font-size: 1.4vw;
+}
+.ava-text-block a {
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+
+/* Ava Page cautions Block Section ------------------------------------------------------
+*/
+
+#split {
+    width: 80%;
+    height: 2px;
+    background: black;
+    border: none;
+    position: relative;
+    margin: 10vh auto 0vh;
+}
+
+.ava-cautions-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.ava-cautions-block img {
+    width: 40vw;
+    height: 40vw;
+}
+.ava-cautions-block div {
+    margin: 0;
+    left: 55%;
+}
+.ava-cautions-block div, .ava-cautions-block img {
+    display: inline-block;
+}
+.ava-cautions-block h2{
+    position: absolute;
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+    top: 0%;
+    transform: translate(-1%, 0);
+}
+.ava-cautions-block p{
+    position: absolute;
+    font-size: 1.4vw;
+    font-weight: 500;
+    top: 10%;
+    width: 48%;
+}
+.ava-cautions-block img {
+    object-fit: cover;
+    border-radius: 1vw;
+    top: 10%;
+    left: 50%;
+    position: relative;
+}
+.ava-cautions-block a {
+    position: absolute;
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    top: 90%;
+    width: 48%;
+}
+
+.ava-cautions-block hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 98%;
+}
+
+
+
+
+/* AVA page AVA models Section ------------------------------------------------------
+*/
+
+.more-products {
+    height: 90vh;
+    position: relative;
+}
+
+.more-products img {
+    height: 13vw;
+    width: 13vw;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.more-products-flexbox {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 33vh 6vw;
+}
+  
+.more-products h4 {
+    position: absolute;
+    margin: 0;
+    font-size: 3.5vw;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.more-products hr {
+    background-color: white;
+    border: none;
+}
+
+.more-products h3 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 1vh 0 1vh;
+}
+
+#products-learnmore {
+    color: #3d8af7;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+
+
+
+/* Footer ------------------------------------------------------
+*/
+
+footer {
+    height: 70vh;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.container {
+    padding: 4vh 0vw;
+    display: grid;
+    grid-template-columns: 22.7vw 22.7vw 22.7vw 22.7vw;
+    grid-template-rows: 27vh 27vh;
+    justify-content: center;
+}
+
+.container div {
+    padding: 3vh 4.9vw;
+}
+
+.container h5 {
+    font-size: 1.5vw;
+    color: #606060;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.container li {
+    font-size: 1.3vw;
+    margin-top: 1.5vh;
+    color: #7a7a7a;
+}
+
+.container a {
+    font-size: 1.3vw;
+    margin-top: 1.5vh;
+    color: #7a7a7a;
+}
+
+footer hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    margin: 0 auto;
+    width: 81%;
+}
+
+#flag {
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 1vw;
+    transform: translate(-20%, 25%);
+}
+
+#nz img, #nz p {
+    display: inline-block;
+}
+
+#nz, #copyright {
+    display: inline-block;
+    color: #7a7a7a;
+    padding: 1vh 9.5vw;
+    font-size: 1.2vw;
+}
+
+#nz p {
+    color: #7a7a7a;
+}
+
+#nz {
+    float: right;
+}
+
