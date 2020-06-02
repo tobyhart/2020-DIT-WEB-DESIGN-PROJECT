@@ -417,140 +417,193 @@ footer hr {
 
 
 
-/* ava.html
+
+
+
+
+
+
+
+/* ai.html
 */
-
-
-
 
 
 /* Ava page Hero Image Section ------------------------------------------------------
 */
 
-.ava-hero-img {
-    background-image: url(Images/AVA_Mixed.png);
+.ai-hero-img {
+    background: url(Images/Smart-city3.png);
     height: 100vh;
     background-position: center;
     background-size: cover;
 }
 
-.ava-hero-txt {
-    height: 100vh;
-    position: relative;
-  }
-
-#human {
+.ai-hero-txt h1 {
     margin: 0;
     position: absolute;
     font-size: 5vw;
-    top: 40%;
-    left: 25%;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #444444;
+    color: #000000;
 } 
 
-#robot {
-    margin: 0;
+.ai-hero-txt h2 {
     position: absolute;
-    font-size: 5vw;
+    font-size: 2.5vw;
     top: 40%;
-    left: 75%;
+    font-weight: 500;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #c0c0c0;
+    color: #444444;
 }
 
-#ava-page-nav nav a {
-    color: rgb(175, 175, 175)
+.ai-hero-txt p {
+    position: absolute;
+    font-size: 1.5vw;
+    text-align: justify;
+    top: 47%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #000000;
 }
 
-#ava-page-nav nav a:hover {
-    color: #c4c4c4;
-}
-
-#ava-page-nav #ava-page-nav-shop {
-    color: rgb(218, 218, 218);
-}
-
-
-/* Ava Page Text Block Section ------------------------------------------------------
+/* ai Page Text Block Section ------------------------------------------------------
 */
 
-.ava-text-block {
+.ai-uses-block {
     width: 80%;
-    margin: 10vh auto;
+    margin: 10vh auto 0;
     position: relative;
 }
-.ava-text-block h1{
-    font-size: 5vw;
-}
-.ava-text-block h2{
+.ai-uses-block h2{
     font-size: 2.5vw;
-    color: #555555;
-    font-weight: 500;
+    color: #292929;
+    font-weight: 600;
 }
-.ava-text-block p{
+.ai-uses-block p{
     font-weight: 500;
-    padding: 1vw 0;
+    padding: 1vw 0 0;
     font-size: 1.4vw;
 }
-.ava-text-block a {
+.ai-uses-block a {
     color: #378aff;
     font-size: 1.5vw;
     font-weight: 600;
 }
 
 
-/* Ava Page cautions Block Section ------------------------------------------------------
+/* ai Page uses Block Section ------------------------------------------------------
+*/
+.ai-uses-img {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.ai-uses-img div {
+    margin: 0;
+    left: 55%;
+}
+.ai-uses-img div, .ai-uses-img img {
+    display: inline-block;
+}
+.ai-uses-img p{
+    position: absolute;
+    font-size: 1.4vw;
+    font-weight: 500;
+    top: 0%;
+    width: 46%;
+    margin-bottom: 10vh;
+}
+.ai-uses-img img {
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+    border-radius: 1vw;
+    top: 10%;
+    left: 50%;
+    position: relative;
+    margin-top: 5vh;
+}
+
+
+
+/* ai Page Text Block Section ------------------------------------------------------
 */
 
-#split {
+.ai-text-block {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.ai-text-block h2{
+    font-size: 2.5vw;
+    color: #292929;
+    font-weight: 600;
+}
+.ai-text-block p{
+    font-weight: 500;
+    padding: 1vw 0;
+    font-size: 1.4vw;
+}
+.ai-text-block a {
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+
+/* ai Page cautions Block Section ------------------------------------------------------
+*/
+
+#ai-split {
     width: 80%;
     height: 2px;
     background: black;
     border: none;
     position: relative;
-    margin: 10vh auto 0vh;
+    margin: 15vh auto 10vh;
 }
-
-.ava-cautions-block {
+.ai-image-block {
     width: 80%;
     margin: 10vh auto;
     position: relative;
 }
-.ava-cautions-block img {
+.ai-image-block img {
     width: 40vw;
     height: 40vw;
 }
-.ava-cautions-block div {
+.ai-image-block div {
     margin: 0;
     left: 55%;
 }
-.ava-cautions-block div, .ava-cautions-block img {
+.ai-image-block div, .ai-image-block img {
     display: inline-block;
 }
-.ava-cautions-block h2{
+.ai-image-block h2{
     position: absolute;
     font-size: 2.5vw;
-    color: #555555;
-    font-weight: 500;
+    color: #292929;
+    font-weight: 600;
     top: 0%;
     transform: translate(-1%, 0);
 }
-.ava-cautions-block p{
+.ai-image-block p{
     position: absolute;
     font-size: 1.4vw;
     font-weight: 500;
     top: 10%;
     width: 48%;
 }
-.ava-cautions-block img {
+.ai-image-block img {
     object-fit: cover;
     border-radius: 1vw;
     top: 10%;
     left: 50%;
     position: relative;
 }
-.ava-cautions-block a {
+.ai-image-block a {
     position: absolute;
     color: #378aff;
     font-size: 1.5vw;
@@ -559,7 +612,7 @@ footer hr {
     width: 48%;
 }
 
-.ava-cautions-block hr {
+.ai-image-block hr {
     background-color: black;
     border: none;
     height: 2px;
