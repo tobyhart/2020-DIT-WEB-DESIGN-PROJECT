@@ -331,6 +331,7 @@ nav a:hover {
 #products-learnmore {
     color: #3d8af7;
     font-size: 1.2vw;
+    font-weight: 600;
 }
 
 
@@ -414,6 +415,8 @@ footer hr {
 
 
 
+
+
 /* ava.html
 */
 
@@ -421,7 +424,7 @@ footer hr {
 
 
 
-/* Homepage Second product Section ------------------------------------------------------
+/* Ava page Hero Image Section ------------------------------------------------------
 */
 
 .ava-hero-img {
@@ -453,7 +456,7 @@ footer hr {
     top: 40%;
     left: 75%;
     transform: translate(-50%, -50%);
-    color: #ebebeb;
+    color: #c0c0c0;
 }
 
 #ava-page-nav nav a {
@@ -466,4 +469,101 @@ footer hr {
 
 #ava-page-nav #ava-page-nav-shop {
     color: rgb(218, 218, 218);
+}
+
+
+/* Ava Page Text Block Section ------------------------------------------------------
+*/
+
+.ava-text-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.ava-text-block h1{
+    font-size: 5vw;
+}
+.ava-text-block h2{
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+}
+.ava-text-block p{
+    font-weight: 500;
+    padding: 1vw 0;
+    font-size: 1.4vw;
+}
+.ava-text-block a {
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+
+/* Ava Page cautions Block Section ------------------------------------------------------
+*/
+
+#split {
+    width: 80%;
+    height: 2px;
+    background: black;
+    border: none;
+    position: relative;
+    margin: 10vh auto 0vh;
+}
+
+.ava-cautions-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.ava-cautions-block img {
+    width: 40vw;
+    height: 40vw;
+}
+.ava-cautions-block div {
+    margin: 0;
+    left: 55%;
+}
+.ava-cautions-block div, .ava-cautions-block img {
+    display: inline-block;
+}
+.ava-cautions-block h2{
+    position: absolute;
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+    top: 0%;
+    transform: translate(-1%, 0);
+}
+.ava-cautions-block p{
+    position: absolute;
+    font-size: 1.4vw;
+    font-weight: 500;
+    top: 10%;
+    width: 48%;
+}
+.ava-cautions-block img {
+    object-fit: cover;
+    border-radius: 1vw;
+    top: 10%;
+    left: 50%;
+    position: relative;
+}
+.ava-cautions-block a {
+    position: absolute;
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    top: 90%;
+    width: 48%;
+}
+
+.ava-cautions-block hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 98%;
 }
