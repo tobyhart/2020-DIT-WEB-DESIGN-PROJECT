@@ -807,7 +807,7 @@ footer hr {
 
 
 
-/* ai Page uses Block Section ------------------------------------------------------
+/* checkout Page uses Block Section ------------------------------------------------------
 */
 .checkout {
     width: 85%;
@@ -848,7 +848,7 @@ footer hr {
     border-radius: 0.5vw;
     width: 50%;
     background-color: #ffc6c9;
-    top: 60%;
+    top: 10%;
 }
 #first-button {
     left: -8%;
