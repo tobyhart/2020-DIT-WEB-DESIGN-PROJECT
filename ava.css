@@ -12,6 +12,8 @@
 
 header {
     width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 nav li, nav a {
@@ -26,11 +28,11 @@ nav a {
     margin: 2.8vw 2.8vw;
     font-size: 1.6vw;
     letter-spacing: 0.35vw;
-    color: rgb(175, 175, 175);
+    color: rgb(218, 218, 218);
 }
 
 nav a:hover {
-    color: #c4c4c4;
+    color: rgb(230, 230, 230);
 }
 
 .login {
@@ -41,10 +43,6 @@ nav a:hover {
     position: absolute;
     width: 13vw;
     margin: 0vw 3vw;
-}
-
-#ava-page-nav-shop {
-    color: rgb(218, 218, 218);
 }
 
 
