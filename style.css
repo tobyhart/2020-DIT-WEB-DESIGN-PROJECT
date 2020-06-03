@@ -691,7 +691,7 @@ footer hr {
 }
 
 
-/* Ava Page Text Block Section ------------------------------------------------------
+/* Corpalytics Page Text Block Section ------------------------------------------------------
 */
 
 .corpalytics-text-block {
@@ -716,7 +716,7 @@ footer hr {
 }
 
 
-/* Ava Page cautions Block Section ------------------------------------------------------
+/* Corpalytics Page cautions Block Section ------------------------------------------------------
 */
 
 #corpalytics-split {
@@ -780,4 +780,89 @@ footer hr {
     position: absolute;
     width: 5%;
     top: 98%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* checkout.html
+*/
+
+
+
+
+/* ai Page uses Block Section ------------------------------------------------------
+*/
+.checkout {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.checkout div, .checkout img {
+    display: inline-block;
+}
+.checkout div {
+    margin: 20vh 3vw;
+    width: 46%;
+    position: absolute;
+}
+.checkout h1 {
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #383838;
+}
+#description{
+    font-size: 1.4vw;
+    font-weight: 500;
+    top: 0%;
+}
+.checkout img {
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+    border-radius: 2vw;
+    position: relative;
+    margin: 20vh 0;
+}
+#first-button, #second-button {
+    text-align: center;
+    position: absolute;
+    padding: 3vh 1vw;
+    border-radius: 0.5vw;
+    width: 50%;
+    background-color: #ffc6c9;
+    top: 60%;
+}
+#first-button {
+    left: -8%;
+}
+#first-button h6, #second-button h6{
+    font-size: 1.8vw;
+    color: #6b6b6b;
+    font-weight: 500;
+}
+#first-button h5, #second-button h5{
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+#second-button {
+    left: 50%;
 }
