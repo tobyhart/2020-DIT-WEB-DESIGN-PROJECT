@@ -428,7 +428,7 @@ footer hr {
 */
 
 
-/* Ava page Hero Image Section ------------------------------------------------------
+/* AI page Hero Image Section ------------------------------------------------------
 */
 
 .ai-hero-img {
@@ -521,10 +521,15 @@ footer hr {
     height: 40vw;
     object-fit: cover;
     border-radius: 1vw;
-    top: 10%;
     left: 50%;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 0vh;
+}
+#second-section img {
+    height: 43vw;
+}
+#third-section img {
+    height: 47vw;
 }
 
 
