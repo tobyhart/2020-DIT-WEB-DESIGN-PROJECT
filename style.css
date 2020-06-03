@@ -12,6 +12,8 @@
 
 header {
     width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 nav li, nav a {
@@ -618,6 +620,160 @@ footer hr {
 }
 
 .ai-image-block hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 98%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* corpalytics.html
+*/
+
+
+
+
+/* Corpalytics page Hero Image Section ------------------------------------------------------
+*/
+
+.corpalytics-hero-img {
+    background-image: url(Images/Boardroom.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.corpalytics-hero-img img{
+    margin: 0;
+    position: absolute;
+    width: 17vw;
+    height: 17vw;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.corpalytics-hero-img h1{
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+}
+.corpalytics-hero-img h2{
+    margin: 0;
+    position: absolute;
+    font-size: 2.5vw;
+    top: 75%;
+    left: 50%;
+    font-weight: 500;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #444444;
+}
+
+
+/* Ava Page Text Block Section ------------------------------------------------------
+*/
+
+.corpalytics-text-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.corpalytics-text-block h2{
+    font-size: 2.5vw;
+    color: #3b3b3b;
+    font-weight: 700;
+}
+.corpalytics-text-block p{
+    font-weight: 500;
+    padding: 1vw 0;
+    font-size: 1.4vw;
+}
+.corpalytics-text-block a {
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+
+/* Ava Page cautions Block Section ------------------------------------------------------
+*/
+
+#corpalytics-split {
+    width: 80%;
+    height: 2px;
+    background: black;
+    border: none;
+    position: relative;
+    margin: 10vh auto 0vh;
+}
+
+.corpalytics-cautions-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.corpalytics-cautions-block div {
+    margin: 0;
+    left: 55%;
+}
+.corpalytics-cautions-block div, .corpalytics-cautions-block img {
+    display: inline-block;
+}
+.corpalytics-cautions-block h2{
+    position: absolute;
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+    top: 0%;
+    transform: translate(-1%, 0);
+}
+.corpalytics-cautions-block p{
+    position: absolute;
+    font-size: 1.4vw;
+    font-weight: 500;
+    top: 10%;
+    width: 48%;
+}
+.corpalytics-cautions-block img {
+    width: 40vw;
+    height: 43vw;
+    object-fit: cover;
+    border-radius: 1vw;
+    top: 10%;
+    left: 50%;
+    position: relative;
+}
+.corpalytics-cautions-block a {
+    position: absolute;
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    top: 90%;
+    width: 48%;
+}
+
+.corpalytics-cautions-block hr {
     background-color: black;
     border: none;
     height: 2px;
