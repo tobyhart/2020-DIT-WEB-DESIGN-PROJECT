@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="app.js" async></script>
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -24,26 +26,31 @@
 
 
 
-
     <section class="checkout">
-        <img src="Images/AVA-Product-Page.png">
+        <img id="checkout-image" src="">
         <div>
-            <h1>AVA Robot</h1>
-            <p id="description">The world's most complex humanoid AI machine can be yours today.</p>
+            <h1 id="checkout-product"></h1>
+            <p id="checkout-description"></p>
             <a href="#" >
                 <div id="first-button">
-                    <h5>Standard AVA</h5>
-                    <h6>$200,000</h6>
+                    <h5 id="checkout-first-option"></h5>
+                    <h6 id="checkout-first-price"></h6>
                 </div>
             </a>
             <a href="#" >
                 <div id="second-button">
-                    <h5>Platinum AVA</h5>
-                    <h6>$250,000</h6>
+                    <h5 id="checkout-second-option"></h5>
+                    <h6 id="checkout-second-price"></h6>
                 </div>
             </a>
         </div>
     </section>
+
+
+
+
+    <script src="app.js">
+    </script>
 
 
     
