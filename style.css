@@ -823,12 +823,12 @@ footer hr {
     width: 46%;
     position: absolute;
 }
-.checkout h1 {
+#checkout-product {
     font-size: 3.5vw;
     font-weight: 700;
     color: #383838;
 }
-#description{
+#checkout-description{
     font-size: 1.4vw;
     font-weight: 500;
     top: 0%;
@@ -848,21 +848,92 @@ footer hr {
     border-radius: 0.5vw;
     width: 50%;
     background-color: #ffc6c9;
-    top: 10%;
+    top: 30%;
 }
 #first-button {
     left: -8%;
 }
-#first-button h6, #second-button h6{
+#checkout-first-price, #checkout-second-price{
     font-size: 1.8vw;
     color: #6b6b6b;
     font-weight: 500;
 }
-#first-button h5, #second-button h5{
+#checkout-first-option, #checkout-second-option{
     font-size: 2.5vw;
     font-weight: 500;
     color: #3f3f3f;
 }
 #second-button {
     left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#shop-code {
+    position: absolute;
+    color: #ffffff00
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shop.html
+*/
+
+
+/* Shop Hero IMG Section
+*/
+
+.shop-page-hero-img {
+    background-image: url(Images/Boardroom.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.shop-page-hero-img h1{
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+}
+.shop-page-hero-img h2{
+    margin: 0;
+    position: absolute;
+    font-size: 2.5vw;
+    top: 75%;
+    left: 50%;
+    font-weight: 500;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #444444;
+}
+
+
+#ava-shop-section {
+    height: 80vh;
+    position: relative;
+    background-color: #fafafa;
 }
