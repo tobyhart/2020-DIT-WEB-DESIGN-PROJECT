@@ -847,8 +847,15 @@ footer hr {
     padding: 3vh 1vw;
     border-radius: 0.5vw;
     width: 50%;
-    background-color: #ffc6c9;
     top: 30%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #383838;
+}
+#first-button:hover, #second-button:hover {
+    border-style: solid;
+    border-width: medium;
+    border-color: #3d8af7;
 }
 #first-button {
     left: -8%;
@@ -905,7 +912,7 @@ footer hr {
 */
 
 .shop-page-hero-img {
-    background-image: url(Images/Boardroom.png);
+    background-image: url(Images/products-hero-img.png);
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -913,27 +920,92 @@ footer hr {
 .shop-page-hero-img h1{
     margin: 0;
     position: absolute;
-    font-size: 5vw;
-    top: 60%;
+    font-size: 3.5vw;
+    text-align: center;
+    top: 22%;
     left: 50%;
+    font-weight: 600;
     transform: translate(-50%, -50%);
-    color: #000000;
+    color: #f1f1f1;
 }
 .shop-page-hero-img h2{
     margin: 0;
     position: absolute;
     font-size: 2.5vw;
-    top: 75%;
+    top: 30%;
     left: 50%;
-    font-weight: 500;
+    width: 100%;
+    font-weight: 300;
     text-align: center;
     transform: translate(-50%, -50%);
-    color: #444444;
+    color: #c4c4c4;
+}
+
+.shop-page-hero-img hr {
+    background-color: rgb(82, 82, 82);
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products-learnmore {
+    color: #3d8af7;
+    font-size: 1.2vw;
+    font-weight: 600;
 }
 
 
 #ava-shop-section {
-    height: 80vh;
+    height: 75vh;
     position: relative;
-    background-color: #fafafa;
+    background-color: #ffffff;
+}
+
+#computer-shop-section {
+    height: 75vh;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+
+#mercury-shop-section {
+    height: 75vh;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#avalanche-shop-section {
+    height: 75vh;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+
+#tokyo-shop-section {
+    height: 75vh;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#business-shop-section {
+    height: 75vh;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+#cars-shop-section {
+    height: 75vh;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.shop-products-flexbox {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 27vh 6vw;
 }
