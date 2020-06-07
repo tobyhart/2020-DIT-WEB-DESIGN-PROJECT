@@ -112,7 +112,7 @@ if (productid == 10) {
     document.getElementById("checkout-second-price").innerHTML = "$2,399.99";
 }
 if (productid == 11) {
-    document.getElementById("checkout-image").src = "Images/products-hillbook-1.png";
+    document.getElementById("checkout-image").src = "Images/products-mercurytop-1.png";
     document.getElementById('checkout-product').innerHTML = 'MercuryTop Desktop Computer';
     document.getElementById("checkout-description").innerHTML = "Brand new 2020 MercuryTop Range Desktop Computer with dynamic retina display. 500GB or 1TB Storage.";
     
