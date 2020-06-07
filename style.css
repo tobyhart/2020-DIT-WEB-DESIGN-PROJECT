@@ -1,3 +1,5 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -1008,4 +1010,88 @@ footer hr {
     text-align: center;
     justify-content: space-around;
     margin: 27vh 6vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* html.
+*/
+
+.login-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/login-page.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-box{
+    width: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-box h1 {
+    float: left;
+    font-size: 2.8vw;
+    border-bottom: 0.25vw solid #5bd4b0;
+    border-bottom-width: 40%;
+    margin-bottom: 2vw;
+    padding: 0.8vw 0;
+    width: 20vw;
+    text-align: center;
+    color: white;
+}
+.login-box img {
+    width: 20vw;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.4vw;
+    padding: 0.6vw 0;
+    margin: 0.6vw 0;
+    border-bottom: 1px solid #5bd4b0;
+}
+.textbox i {
+    width: 1.9vw;
+    float: left;
+    color: white;
+    text-align: center;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1.3vw;
+    width: 80%;
+    float: left;
+    margin: 0 0.7vw;
+}
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #5bd465;
+    color: white;
+    padding: 0.5vw 0 0.6vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin: 0.84vw 0;
+    transition: ease-in 0.15s;
+}
+.btn:hover {
+    background-color: #5bd465;
 }
