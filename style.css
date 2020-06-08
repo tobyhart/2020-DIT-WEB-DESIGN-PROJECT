@@ -1023,7 +1023,7 @@ footer hr {
 
 
 
-/* html.
+/* login.html
 */
 
 .login-body {
@@ -1038,7 +1038,7 @@ footer hr {
 .login-box{
     width: 20vw;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1091,7 +1091,73 @@ footer hr {
     cursor: pointer;
     margin: 0.84vw 0;
     transition: ease-in 0.15s;
+    font-weight: 600;
 }
 .btn:hover {
     background-color: #5bd465;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+}
+
+.login-box p {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding: 0.7vw 0;
+}
+
+.login-box a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* signup.html
+*/
+.go-back {
+    padding: 2vw 2.5vw;
+    font-size: 1.5vw;
+}
+.go-back a{
+    transition: 0.5s;
+}
+.go-back a:hover {
+    color: rgb(172, 172, 172);
+}
+
+.signup-body {
+    background-color: #f8f8f8;
+}
+#signup-box {
+    top:50%;
+}
+
+#signup-box h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5vw;
+    border-bottom: 0.25vw solid #20e4a9;
+}
+#signup-box div{
+    border-bottom: 1px solid #20e4a9;
+}
+#signup-box div i {
+    color: rgb(0, 0, 0);
+}
+#signup-box div input{
+    color: rgb(0, 0, 0);
+}
+#subtn {
+    border: 2px solid #20e4a9;
+    color: rgb(68, 68, 68);
+}
+#subtn:hover {
+    background-color: #20e4a9;
 }
