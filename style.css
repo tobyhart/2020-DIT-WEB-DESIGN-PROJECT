@@ -18,8 +18,12 @@ header {
     z-index: 10;
 }
 
-nav li, nav a {
+nav li, nav a{
     display: inline-block;
+}
+
+.navbar, #nav-profile {
+    float: right;
 }
 
 nav ul {
@@ -39,13 +43,48 @@ nav a:hover {
 }
 
 .login {
-    margin-right: 2.8vw;
+    margin-right: 10vw;
 }
 
 .logo {
     position: absolute;
     width: 13vw;
     margin: 0vw 3vw;
+}
+
+#nav-profile {
+    width: 4vw;
+    margin-left: 3vw;
+    border-radius: 4vw;
+    border: 1px solid black;
+    transform: translate(-150%, 74%);
+    z-index: 20;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eeeeee;
+    width: 10vw;
+    z-index: 1;
+    top: 7.2vw;
+    left: 87vw;
+}
+.dropdown-content a {
+    color: rgb(49, 49, 49);
+    padding: 0.9vw 1.2vw;
+    display: block;
+    text-align: center
+}
+.dropdown-content a:hover {
+    background-color: rgb(163, 163, 163);
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#nav-profile:hover {
+    border: 2px solid green !important;
+    transition: ease-in-out 0.3s;
 }
 
 

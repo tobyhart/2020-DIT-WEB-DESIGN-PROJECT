@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="app.js" async></script>
+    <script src="login.js" async></script>
 </head>
+
+<script src="login.js" async>
+    localStorage.setItem('loggedin', '1')
+</script>
 
 <body class="login-body">
     <header>
@@ -18,7 +23,7 @@
                 <li><a href="ava.html">AVA</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Company</a></li>
-                <li class="login"><a href="#">Log In</a></li>
+                <li class="login"><a href="#"></a></li>
             </ul> 
         </nav>
     </header>
@@ -35,7 +40,7 @@
             <input type="password" placeholder="Password" name="" value="">
         </div>
 
-        <a href="home.html"><input class="btn" type="button" name="" value="Log In"></a>
+        <a href="home.html"><input class="btn" type="button" name="" value="Log In" onclick="localStorage.setItem('loggedin', '2')"></a>
 
         <p>Don't have an Infinity account?
         <br>Sign Up <a href="signup.html">here</a></p>
