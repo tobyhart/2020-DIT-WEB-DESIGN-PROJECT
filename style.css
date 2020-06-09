@@ -66,7 +66,7 @@ nav a:hover {
     background-color: #eeeeee;
     width: 10vw;
     z-index: 1;
-    top: 7.2vw;
+    top: 7vw;
     left: 87vw;
 }
 .dropdown-content a {
@@ -885,8 +885,7 @@ footer hr {
 #first-button, #second-button {
     text-align: center;
     position: absolute;
-    padding: 3vh 1vw;
-    border-radius: 0.5vw;
+    padding: 3vh 0;
     width: 50%;
     top: 30%;
     border-style: solid;
@@ -897,9 +896,18 @@ footer hr {
     border-style: solid;
     border-width: medium;
     border-color: #3d8af7;
+    z-index: 10;
+    cursor: pointer;
 }
 #first-button {
     left: -8%;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+}
+#second-button {
+    left: 41.5%;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
 }
 #checkout-first-price, #checkout-second-price{
     font-size: 1.8vw;
@@ -910,9 +918,6 @@ footer hr {
     font-size: 2.5vw;
     font-weight: 500;
     color: #3f3f3f;
-}
-#second-button {
-    left: 50%;
 }
 
 
@@ -1141,7 +1146,7 @@ footer hr {
 .login-box p {
     text-align: center;
     font-weight: 400;
-    color: white;
+    color: black;
     padding: 0.7vw 0;
 }
 
@@ -1199,4 +1204,130 @@ footer hr {
 }
 #subtn:hover {
     background-color: #20e4a9;
+}
+
+
+
+
+
+
+
+
+
+/*Support.html
+*/
+
+
+/* support page categories Section
+*/
+
+#support-page-hero-img {
+    background: black;
+    height:100vh;
+}
+
+.support-products-flexbox img {
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.support-products-flexbox img:hover {
+    height: 12vw;
+    width: 12vw;
+}
+
+.support-products-flexbox {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 50vh;
+    width: 90%;
+}
+
+.support-products-flexbox a {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 1vh 0 1vh;
+    color: white;
+}
+
+
+.support-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3.5vw 0;
+}
+.support-content h1 {
+    font-size: 4vw;
+}
+.support-content h2 {
+    font-size: 2.5vw;
+    padding: 1vw 0 0;
+    color: #5a5a5a;
+}
+.support-content h6 {
+    font-size: 1.7vw;
+    padding: 2vw 0 0.7vw;
+}
+
+.support-content p {
+    font-size: 1.2vw;
+    padding: 0 0 1vw;
+}
+
+.support-content a {
+    text-decoration: underline;
+}
+
+#computers-background {
+    background: rgb(248, 248, 248);
+}
+
+.contact-support-subheader {
+    padding-top: 1vw;
+}
+
+.smaller-header-support {
+    transform: translate(0, -20%);
+}
+#transport-background {
+    background: rgb(248, 248, 248);
+}
+
+
+
+
+
+
+/* careers.html
+*/
+
+#careers-box {
+    top:45%;
+}
+
+#careers-box img{
+    transform: translate(0, 20%);
+}
+
+#careers-box h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    width: 25vw;
+    transform: translate(-10%, 0);
+    border-bottom: 0.25vw solid #20e4a9;
+}
+#careers-box div{
+    border-bottom: 1px solid #20e4a9;
+}
+#careers-box div i {
+    color: rgb(0, 0, 0);
+}
+#careers-box div input{
+    color: rgb(0, 0, 0);
+}
+#careers-box p {
+    color: black;
 }
