@@ -480,6 +480,18 @@ footer hr {
     background-position: center;
     background-size: cover;
 }
+#company-hero-img {
+    background: url(Images/Headquarters.png);
+}
+#company-hero-img h1 {
+    color: white;
+}
+#company-hero-img h2 {
+    color: rgb(134, 134, 134);
+}
+#company-hero-img p {
+    color: rgb(255, 255, 255);
+}
 
 .ai-hero-txt h1 {
     margin: 0;
@@ -573,6 +585,39 @@ footer hr {
 }
 #third-section img {
     height: 47vw;
+}
+#company-first-section img {
+    height: 43vw;
+}
+#company-first-section h6{
+    position: absolute;
+    font-size: 1vw;
+    color: #7a7a7a;
+    font-weight: 500;
+    top: 100%;
+    left: 62%;
+    letter-spacing: 0.1vw;
+}
+#company-second-section h6{
+    position: absolute;
+    font-size: 1vw;
+    color: #7a7a7a;
+    font-weight: 500;
+    top: 100%;
+    left: 58.5%;
+    letter-spacing: 0.1vw;
+}
+#company-third-section h6{
+    position: absolute;
+    font-size: 1vw;
+    color: #7a7a7a;
+    font-weight: 500;
+    top: 100%;
+    left: 61%;
+    letter-spacing: 0.1vw;
+}
+#company-third-section img{
+    height: 46vw;
 }
 
 
