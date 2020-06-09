@@ -1191,8 +1191,12 @@ footer hr {
 .login-box p {
     text-align: center;
     font-weight: 400;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 0.7vw 0;
+}
+
+#gotosignup {
+    color: rgb(255, 255, 255);
 }
 
 .login-box a {
