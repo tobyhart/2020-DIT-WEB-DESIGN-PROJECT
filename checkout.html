@@ -7,21 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="app.js" async></script>
+    <script src="login.js" async></script>
 </head>
 
 <body>
     <header>
         <a href="home.html"><img class="logo" src="Images/HillCorp Logo Dark.png"></a>
-        <nav>
-            <ul>
-                <li><a href="#">Shop</a></li>
+        
+        <div class="dropdown">
+            <img id="nav-profile" src="">
+            <div class="dropdown-content">
+              <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+
+        <nav id="navigationjs">
+            <ul class="navbar">
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="ava.html">AVA</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Company</a></li>
-                <li class="login"><a href="#">Log In</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li id="login"><a id="loginbutton" href="login.html"></a></li>
             </ul> 
         </nav>
     </header>
+
+    <script src="login.js" async>
+    </script>
+    
 
 
 
