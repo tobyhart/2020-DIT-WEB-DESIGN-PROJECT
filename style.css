@@ -1376,3 +1376,58 @@ footer hr {
 #careers-box p {
     color: black;
 }
+
+
+
+/* orderinfotwo.html
+*/
+
+#orderinfo-hero-img {
+    background: rgb(248, 248, 248);
+}
+
+#order p{
+    margin-top: 8vw;
+    font-size: 2vw;
+    
+    width: 80vw;
+
+}
+#order h3{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 3vw;
+}
+
+#order h4{
+    position: absolute;
+    top: 63%;
+    right: 10%;
+    color: #6b6b6b;
+    font-weight: 500;
+    float: right;
+    font-size: 1.3vw;
+}
+
+#orderinfo-split {
+    width: 80%;
+    height: 2px;
+    background: black;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#orderinfo-split-two {
+    width: 80%;
+    height: 2px;
+    background: black;
+    border: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
