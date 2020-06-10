@@ -18,32 +18,74 @@ header {
     z-index: 10;
 }
 
-nav li, nav a{
-    display: inline-block;
-}
+@media only screen and (min-width: 801px){
 
-.navbar, #nav-profile {
-    float: right;
-}
+    nav li, nav a{
+        display: inline-block;
+    }
 
-nav ul {
-    float: right;
-    
-}
+    .navbar, #nav-profile {
+        float: right;
+    }
 
-nav a {
-    margin: 2.8vw 2.8vw;
-    font-size: 1.6vw;
-    letter-spacing: 0.35vw;
-    color: #606060;
-}
+    nav ul {
+        float: right;
+        
+    }
 
-nav a:hover {
-    color: #aaaaaa;
-}
+    nav a {
+        margin: 2.8vw 2.8vw;
+        font-size: 1.6vw;
+        letter-spacing: 0.35vw;
+        color: #686868;
+        transition: 0.25s;
+    }
 
-.login {
-    margin-right: 10vw;
+    nav a:hover {
+        color: #b9b9b9;
+    }
+
+    .login {
+        margin-right: 10vw;
+    }
+
+    #nav-profile {
+        width: 4vw;
+        margin-left: 3vw;
+        border-radius: 4vw;
+        border: 1px solid black;
+        transform: translate(-150%, 74%);
+        z-index: 10;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #eeeeee;
+        width: 10vw;
+        z-index: 1;
+        top: 7vw;
+        left: 87vw;
+    }
+    .dropdown-content a {
+        color: rgb(49, 49, 49);
+        padding: 0.9vw 1.2vw;
+        display: block;
+        text-align: center
+    }
+    .dropdown-content a:hover {
+        background-color: rgb(163, 163, 163);
+        color: white;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #nav-profile:hover {
+        border: 2px solid green !important;
+        transition: ease-in-out 0.3s;
+    }
+    .hamburger-menu, .sub-menu li{
+        display: none;
+    }
 }
 
 .logo {
@@ -52,39 +94,71 @@ nav a:hover {
     margin: 0vw 3vw;
 }
 
-#nav-profile {
-    width: 4vw;
-    margin-left: 3vw;
-    border-radius: 4vw;
-    border: 1px solid black;
-    transform: translate(-150%, 74%);
-    z-index: 20;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #eeeeee;
-    width: 10vw;
-    z-index: 1;
-    top: 7vw;
-    left: 87vw;
-}
-.dropdown-content a {
-    color: rgb(49, 49, 49);
-    padding: 0.9vw 1.2vw;
-    display: block;
-    text-align: center
-}
-.dropdown-content a:hover {
-    background-color: rgb(163, 163, 163);
-    color: white;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-#nav-profile:hover {
-    border: 2px solid green !important;
-    transition: ease-in-out 0.3s;
+@media only screen and (max-width: 800px){
+
+    .sub-menu {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .sub-menu .hamburger-menu {
+        border: none;
+        color: white;
+        padding: 14px 16px;
+        margin: 0;
+    }
+    
+    .sub-menu {
+        transform: translate(90vw, -2vh);
+    }
+    .sub-menu img {
+        width: 70px;
+        z-index: 10;
+    }
+    
+    .hamburger-content {
+        position: absolute;
+        background-color: none;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .hamburger-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 2vw;
+    }
+
+    .hamburger-content li {
+        background-color: #f2f2f2;
+    }
+    
+    .hamburger-content li:hover {
+        background-color: #ddd;
+    }
+    
+    .sub-menu:hover .hamburger-content {
+        list-style: none;
+    }
+    .sub-menu:hover {
+        overflow: visible;
+        height: 100vh;
+    }
+    .sub-menu:hover .hamburger-content li{
+        width: 12vw !important;
+        transform: translate(-4vw, 0);
+    }
+    .navbar{
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    #companyweirdo {
+        transform: translate(-0.6vw, 0);
+    }
 }
 
 
@@ -131,6 +205,27 @@ nav a:hover {
 }
 
 
+@media only screen and (max-width: 801px){
+    .hero-img {
+        background-image: url(Images/AVA-Product-Page.png);
+        background-position: left;
+    }
+
+    .hero-img h1{
+        font-size: 8vw;
+    }
+    
+    .hero-img p {
+        width: 40%;
+        margin: 50vh 6vw;
+        font-size: 2.5vw;
+    }
+    
+    #hero-img-learnmore {
+        margin: 59vh 6vw;
+        font-size: 2vw;
+    }
+}
 
 /* Homepage Second product Section ------------------------------------------------------
 */
@@ -184,7 +279,26 @@ nav a:hover {
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 801px){
+      
+    .section1-txt h1 {
+        text-align: center;
+        font-size: 7vw;
+    } 
+    .section1-txt p {
+        font-size: 2.5vw;
+        text-align: center;
+        top: 53%;
+    }
+    #section1-learnmore {
+        font-size: 2.3vw;
+        top: 59%;
+    }
+    .section1-txt hr {
+        top: 62%;
+    }
 
+}
 
 /* Homepage Shop Header Section ------------------------------------------------------
 */
@@ -224,6 +338,35 @@ nav a:hover {
     top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 801px){
+      
+
+    .homepage-shop {
+        height: 35vh;
+        position: relative;
+    }
+    
+    .homepage-shop h1{
+        font-size: 7vw;
+    } 
+
+    .homepage-shop p {
+        font-size: 2vw;
+        text-align: center;
+        top: 48%;
+    }
+
+    #homepage-shop-learnmore {
+        font-size: 2vw;
+        top: 57%;
+    }
+
+    .homepage-shop hr {
+        top: 64%;
+    }
+
 }
 
 
@@ -272,6 +415,29 @@ nav a:hover {
     top: 60.5%;
     left: 25%;
     transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen and (max-width: 801px){
+      
+    .fayonette-shop {
+        height: 50vh;
+    }
+    
+    .fayonette-shop img {
+        height: 50vh;
+    }
+    
+    .fayonette-items p {
+        font-size: 1.5vw;
+        top: 52.5%;
+    }
+    
+    #fayonette-learnmore {
+        font-size: 1.7vw;
+        top: 57%;
+    }
 }
 
 
@@ -329,6 +495,29 @@ nav a:hover {
 }
 
 
+
+@media only screen and (max-width: 801px){
+      
+    .corpalytics-shop {
+        height: 50vh;
+    }
+    
+    .corpalytics-shop img {
+        height: 50vh;
+    }
+    
+    .corpalytics-items p {
+        font-size: 1.5vw;
+        top: 52.5%;
+    }
+    
+    #corpalytics-learnmore {
+        font-size: 1.7vw;
+        top: 57%;
+    }
+}
+
+
 /* Homepage More Products Section ------------------------------------------------------
 */
 
@@ -342,6 +531,11 @@ nav a:hover {
     width: 13vw;
     object-fit: cover;
     border-radius: 2vw;
+    transition: 0.25s;
+}
+
+.more-products img:hover {
+    height: 13.5vw;
 }
 
 .more-products-flexbox {
@@ -375,6 +569,66 @@ nav a:hover {
     color: #3d8af7;
     font-size: 1.2vw;
     font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+
+    .more-products {
+        height: auto;
+        position: relative;
+    }
+    
+    .more-products img {
+        height: 30vw;
+        width: 30vw;
+        object-fit: cover;
+        border-radius: 2vw;
+    }
+    
+    .more-products-flexbox {
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 47vw 47vw;
+        text-align: center;
+        justify-content: space-around;
+        margin: 20vh 8vw 5vh;
+    }
+      
+    .more-products h4 {
+        position: absolute;
+        margin: 0;
+        font-size: 7vw;
+        top: 12%;
+        left: 50%;
+        width: 100vw;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    } 
+    
+    .more-products hr {
+        background-color: white;
+        border: none;
+    }
+    
+    .more-products h3 {
+        font-size: 3.5vw;
+        font-weight: 700;
+        margin: 1vh 0;
+    }
+    
+    #products-learnmore {
+        color: #3d8af7;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+
+    .more-products img:hover {
+        height: 32vw;
+    }
+
 }
 
 
@@ -493,35 +747,75 @@ footer hr {
     color: rgb(255, 255, 255);
 }
 
-.ai-hero-txt h1 {
-    margin: 0;
-    position: absolute;
-    font-size: 5vw;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
-} 
+@media only screen and (min-width: 801px){
 
-.ai-hero-txt h2 {
-    position: absolute;
-    font-size: 2.5vw;
-    top: 40%;
-    font-weight: 500;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #444444;
+    .ai-hero-txt h1 {
+        margin: 0;
+        position: absolute;
+        font-size: 5vw;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+    } 
+
+    .ai-hero-txt h2 {
+        position: absolute;
+        font-size: 2.5vw;
+        top: 40%;
+        font-weight: 500;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #444444;
+    }
+
+    .ai-hero-txt p {
+        position: absolute;
+        font-size: 1.5vw;
+        text-align: justify;
+        top: 47%;
+        font-weight: 500;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #000000;
+    }
+
 }
 
-.ai-hero-txt p {
-    position: absolute;
-    font-size: 1.5vw;
-    text-align: justify;
-    top: 47%;
-    font-weight: 500;
-    left: 50%;
-    transform: translate(-50%, 0);
-    color: #000000;
+@media only screen and (max-width: 800px){
+
+    .ai-hero-txt h1 {
+        margin: 0;
+        position: absolute;
+        font-size: 7vw;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+    } 
+
+    .ai-hero-txt h2 {
+        position: absolute;
+        font-size: 3.5vw;
+        top: 37%;
+        font-weight: 500;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #444444;
+    }
+
+    .ai-hero-txt p {
+        position: absolute;
+        font-size: 2.2vw;
+        text-align: justify;
+        width: 70%;
+        top: 42%;
+        font-weight: 500;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #000000;
+    }
+
 }
 
 /* ai Page Text Block Section ------------------------------------------------------
@@ -548,6 +842,12 @@ footer hr {
     font-weight: 600;
 }
 
+@media only screen and (max-width: 800px){
+
+.ai-uses-block p{
+    font-size: 1.8vw;
+}
+}
 
 /* ai Page uses Block Section ------------------------------------------------------
 */
@@ -620,6 +920,31 @@ footer hr {
     height: 46vw;
 }
 
+@media only screen and (max-width: 800px){
+
+    .ai-uses-img p{
+        font-size: 1.8vw;
+    }
+    .ai-uses-img img {
+        margin-bottom: 12vh;
+    }
+    #company-first-section h6{
+        transform: translate(1.2vw, -23.5vw);
+    }
+    #company-first-section img{
+        margin-bottom: 24vw;
+    }
+    #company-second-section h6{
+        transform: translate(1.2vw, -12vw);
+    }
+    #company-third-section h6{
+        transform: translate(1.2vw, -20vw);
+    }
+
+    #company-third-section img{
+        margin-bottom: 20vw;
+    }
+}
 
 
 /* ai Page Text Block Section ------------------------------------------------------
@@ -644,6 +969,15 @@ footer hr {
     color: #378aff;
     font-size: 1.5vw;
     font-weight: 600;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    .ai-text-block p{
+        padding-top:1vw;
+        font-size: 1.8vw;
+    }
 }
 
 
@@ -795,11 +1129,6 @@ footer hr {
     padding: 1vw 0;
     font-size: 1.4vw;
 }
-.corpalytics-text-block a {
-    color: #378aff;
-    font-size: 1.5vw;
-    font-weight: 600;
-}
 
 
 /* Corpalytics Page cautions Block Section ------------------------------------------------------
@@ -850,25 +1179,40 @@ footer hr {
     left: 50%;
     position: relative;
 }
-.corpalytics-cautions-block a {
-    position: absolute;
-    color: #378aff;
-    font-size: 1.5vw;
-    font-weight: 600;
-    top: 90%;
-    width: 48%;
+
+
+@media only screen and (max-width: 801px){
+    .corpalytics-hero-img img{
+        width: 30vw;
+        height: 30vw;
+    }
+    .corpalytics-hero-img h1{
+        font-size: 7vw;
+        top: 55%;
+    }
+    .corpalytics-hero-img h2{
+        font-size: 3.5vw;
+        top: 68%;
+    }
+    .corpalytics-text-block h2{
+        font-size: 4vw;
+    }
+    .corpalytics-text-block p{
+        font-size: 2vw;
+    }
+    .corpalytics-cautions-block h2{
+        font-size: 3.5vw;
+    }
+    .corpalytics-cautions-block p{
+        font-size: 2vw;
+        top: 7vw;
+    }
+    .corpalytics-cautions-block img {
+        margin-bottom: 5vw;
+        height: 70vw;
+    }
+
 }
-
-.corpalytics-cautions-block hr {
-    background-color: black;
-    border: none;
-    height: 2px;
-    position: absolute;
-    width: 5%;
-    top: 98%;
-}
-
-
 
 
 
@@ -901,8 +1245,11 @@ footer hr {
     margin: 0 auto;
     position: relative;
 }
+
+@media only screen and (min-width: 801px){
 .checkout div, .checkout img {
     display: inline-block;
+}
 }
 .checkout div {
     margin: 20vh 3vw;
@@ -967,9 +1314,51 @@ footer hr {
 
 
 
+@media only screen and (max-width: 800px){
+
+    .checkout {
+        width: 60%;
+        height: 130vh;
+    }
+    #checkout-product {
+        font-size: 5vw;
+        font-weight: 700;
+        transform: translate(0, -18vw);
+        width: 200%;
+    }
+    #checkout-description{
+        font-size: 2.5vw;
+        font-weight: 500;
+        width: 180%;
+        transform: translate(0, -17vw);
+    }
+    .checkout img {
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        margin: 20vh 0 0;
+    }
+    #first-button, #second-button {
+        width: 90%;
+        top: 1vw;
+        transform: translate(0, -17vw);
+    }
+    #second-button {
+        left: 80%;
+    }
+    #checkout-first-price, #checkout-second-price{
+        font-size: 2.3vw;
+        color: #6b6b6b;
+        font-weight: 500;
+    }
+    #checkout-first-option, #checkout-second-option{
+        font-size: 3vw;
+        font-weight: 500;
+        color: #3f3f3f;
+    }
 
 
-
+}
 
 
 
@@ -1053,55 +1442,89 @@ footer hr {
 #ava-shop-section {
     height: 75vh;
     position: relative;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 #computer-shop-section {
     height: 75vh;
     position: relative;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 
 #mercury-shop-section {
     height: 75vh;
     position: relative;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 #avalanche-shop-section {
     height: 75vh;
     position: relative;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 
 #tokyo-shop-section {
     height: 75vh;
     position: relative;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 #business-shop-section {
     height: 75vh;
     position: relative;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 #cars-shop-section {
     height: 75vh;
     position: relative;
+    background-color: #f8f8f8;
+}
+
+#apps-shop-section {
+    height: 75vh;
+    position: relative;
     background-color: #ffffff;
 }
 
-.shop-products-flexbox {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    margin: 27vh 6vw;
+@media only screen and (min-width: 800px){
+
+    .shop-products-flexbox {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        margin: 27vh 6vw;
 }
 
+}
 
+@media only screen and (max-width: 800px){
+
+    
+    .shop-products-flexbox {
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 47vw 47vw;
+        text-align: center;
+        justify-content: space-around;
+        margin: 20vh 8vw 5vh;
+    }
+
+    .products-learnmore {
+        font-size: 1.7vw;
+    }
+
+
+    #ava-shop-section, #computer-shop-section, #mercury-shop-section, #avalanche-shop-section, #tokyo-shop-section, #business-shop-section, #cars-shop-section, #apps-shop-section {
+        height: 120vw;
+    }
+    #ava-shop-section h4, #computer-shop-section h4, #mercury-shop-section h4, #avalanche-shop-section h4, #tokyo-shop-section h4, #business-shop-section h4, #cars-shop-section h4, #apps-shop-section h4 {
+        padding-bottom: 5vw;
+    }
+
+}
 
 
 
@@ -1197,6 +1620,7 @@ footer hr {
 
 #gotosignup {
     color: rgb(255, 255, 255);
+    font-size: 1.3vw;
 }
 
 .login-box a {
@@ -1205,9 +1629,19 @@ footer hr {
 }
 
 
+@media only screen and (max-width: 800px){
+    
 
+    .login-box{
+        top: 45%;
+    }
 
-
+    #gotosignup {
+        width: 150%;
+        transform: translate(-15%, 0);
+        font-size: 1.9vw;
+    }
+}
 
 
 
@@ -1237,6 +1671,16 @@ footer hr {
     color: rgb(0, 0, 0);
     font-size: 2.5vw;
     border-bottom: 0.25vw solid #20e4a9;
+}
+#signup-box p {
+    font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 800px){
+
+    #signup-box p {
+        font-size: 1.7vw;
+    }
 }
 #signup-box div{
     border-bottom: 1px solid #20e4a9;
@@ -1360,6 +1804,9 @@ footer hr {
 #careers-box img{
     transform: translate(0, 20%);
 }
+#careers-box p{
+    font-size: 1.3vw;
+}
 
 #careers-box h1 {
     color: rgb(0, 0, 0);
@@ -1379,6 +1826,56 @@ footer hr {
 }
 #careers-box p {
     color: black;
+}
+
+
+@media only screen and (max-width: 800px){
+
+
+    #careers-box {
+        top:45%;
+    }
+
+    #careers-box img{
+        width: 30vw;
+        transform: translate(-15%, 20%);
+    }
+    #careers-box p{
+        font-size: 2vw;
+        width: 150%;
+        transform: translate(-15%, 0);
+    }
+
+    #careers-box h1 {
+        font-size: 3vw;
+        width: 40vw;
+        transform: translate(-25%, 0);
+    }
+
+    .textbox{
+        width: 150%;
+        font-size: 1.8vw;
+        padding: 1vw 0;
+        margin: 1vw 0;
+        transform: translate(-15%, 0);
+    }
+    .textbox i {
+        width: 1.9vw;
+    }
+    .textbox input{
+        font-size: 1.8vw;
+        margin: 0 1vw;
+    }
+    .btn {
+        width: 150%;
+        transform: translate(-15%, 0);
+        padding: 0.8vw 0 0.9vw;
+        font-size: 2vw;
+    }
+    .go-back {
+        padding: 2.5vw 3vw;
+        font-size: 2.5vw;
+    }
 }
 
 
@@ -1438,4 +1935,169 @@ footer hr {
 
 #newsroom {
     padding-top: 7vw;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    
+    #order p{
+        font-size: 2.5vw;
+        margin: 15vh 0;
+        text-align: center;
+    }
+    #order h3{
+        font-size: 4.5vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    #order h4{
+        top: 62%;
+        font-size: 2vw;
+        transform: translate(-169%, 0);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Ava page Hero Image Section ------------------------------------------------------
+*/
+
+.ava-hero-img {
+    background-image: url(Images/AVA_Mixed.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.ava-hero-txt {
+    height: 100vh;
+    position: relative;
+  }
+
+#human {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #444444;
+} 
+
+#robot {
+    margin: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #c0c0c0;
+}
+
+
+/* Ava Page Text Block Section ------------------------------------------------------
+*/
+
+.ava-text-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.ava-text-block h1{
+    font-size: 5vw;
+}
+.ava-text-block h2{
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+}
+.ava-text-block p{
+    font-weight: 500;
+    padding: 1vw 0;
+    font-size: 1.4vw;
+}
+.ava-text-block a {
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+
+/* Ava Page cautions Block Section ------------------------------------------------------
+*/
+
+#split {
+    width: 80%;
+    height: 2px;
+    background: black;
+    border: none;
+    position: relative;
+    margin: 10vh auto 0vh;
+}
+
+.ava-cautions-block {
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.ava-cautions-block img {
+    width: 40vw;
+    height: 40vw;
+}
+.ava-cautions-block div {
+    margin: 0;
+    left: 55%;
+}
+.ava-cautions-block div, .ava-cautions-block img {
+    display: inline-block;
+}
+.ava-cautions-block h2{
+    position: absolute;
+    font-size: 2.5vw;
+    color: #555555;
+    font-weight: 500;
+    top: 0%;
+    transform: translate(-1%, 0);
+}
+.ava-cautions-block p{
+    position: absolute;
+    font-size: 1.4vw;
+    font-weight: 500;
+    top: 10%;
+    width: 48%;
+}
+.ava-cautions-block img {
+    object-fit: cover;
+    border-radius: 1vw;
+    top: 10%;
+    left: 50%;
+    position: relative;
+}
+.ava-cautions-block a {
+    position: absolute;
+    color: #378aff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    top: 90%;
+    width: 48%;
+}
+
+.ava-cautions-block hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    width: 5%;
+    top: 98%;
 }
