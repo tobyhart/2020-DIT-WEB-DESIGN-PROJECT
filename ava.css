@@ -7,6 +7,7 @@
     color: #000000;
 }
 
+
 /* Nav Bar ------------------------------------------------------
 */
 
@@ -16,33 +17,150 @@ header {
     z-index: 10;
 }
 
-nav li, nav a {
-    display: inline-block;
-}
+@media only screen and (min-width: 801px){
 
-nav ul {
-    float: right;
-}
+    nav li, nav a{
+        display: inline-block;
+    }
 
-nav a {
-    margin: 2.8vw 2.8vw;
-    font-size: 1.6vw;
-    letter-spacing: 0.35vw;
-    color: rgb(218, 218, 218);
-}
+    .navbar, #nav-profile {
+        float: right;
+    }
 
-nav a:hover {
-    color: rgb(230, 230, 230);
-}
+    nav ul {
+        float: right;
+        
+    }
 
-.login {
-    margin-right: 2.8vw;
+    nav a {
+        margin: 2.8vw 2.8vw;
+        font-size: 1.6vw;
+        letter-spacing: 0.35vw;
+        color: #c4c4c4;
+        transition: 0.25s;
+    }
+
+    nav a:hover {
+        color: #6d6d6d;
+    }
+
+    .login {
+        margin-right: 10vw;
+    }
+
+    #nav-profile {
+        width: 4vw;
+        margin-left: 3vw;
+        border-radius: 4vw;
+        border: 1px solid black;
+        transform: translate(-150%, 74%);
+        z-index: 20;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #eeeeee;
+        width: 10vw;
+        z-index: 1;
+        top: 7vw;
+        left: 87vw;
+    }
+    .dropdown-content a {
+        color: rgb(49, 49, 49);
+        padding: 0.9vw 1.2vw;
+        display: block;
+        text-align: center
+    }
+    .dropdown-content a:hover {
+        background-color: rgb(163, 163, 163);
+        color: white;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #nav-profile:hover {
+        border: 2px solid green !important;
+        transition: ease-in-out 0.3s;
+    }
+
+    .hamburger-menu, .sub-menu li{
+        display: none;
+    }
 }
 
 .logo {
     position: absolute;
     width: 13vw;
     margin: 0vw 3vw;
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+    .sub-menu {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .sub-menu .hamburger-menu {
+        border: none;
+        color: white;
+        padding: 14px 16px;
+        margin: 0;
+    }
+    
+    .sub-menu {
+        transform: translate(90vw, -2vh);
+    }
+    .sub-menu img {
+        width: 70px;
+        z-index: 10;
+    }
+    
+    .hamburger-content {
+        position: absolute;
+        background-color: none;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .hamburger-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 2vw;
+    }
+
+    .hamburger-content li {
+        background-color: #f2f2f2;
+    }
+    
+    .hamburger-content li:hover {
+        background-color: #ddd;
+    }
+    
+    .sub-menu:hover .hamburger-content {
+        list-style: none;
+    }
+    .sub-menu:hover {
+        overflow: visible;
+        height: 100vh;
+    }
+    .sub-menu:hover .hamburger-content li{
+        width: 12vw !important;
+        transform: translate(-4vw, 0);
+    }
+    .navbar{
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    #companyweirdo {
+        transform: translate(-0.6vw, 0);
+    }
 }
 
 
@@ -107,6 +225,22 @@ nav a:hover {
     color: #378aff;
     font-size: 1.5vw;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 800px){
+
+    .ava-text-block h1{
+        font-size: 7vw;
+    }
+    .ava-text-block h2{
+        font-size: 4vw;
+    }
+    .ava-text-block p{
+        font-size: 2.5vw;
+    }
+    .ava-text-block a{
+        font-size: 2.5vw;
+    }
 }
 
 
@@ -180,9 +314,36 @@ nav a:hover {
 
 
 
+@media only screen and (max-width: 800px){
+
+    .ava-cautions-block h1{
+        font-size: 7vw;
+    }
+    .ava-cautions-block h2{
+        font-size: 4vw;
+    }
+    .ava-cautions-block p{
+        font-size: 2vw;
+    }
+    .ava-cautions-block a{
+        font-size: 2.5vw;
+        top: 105%;
+    }
+    .ava-cautions-block hr{
+        font-size: 2.5vw;
+        top: 113%;
+    }
+    .ava-cautions-block img{
+        margin-bottom: 30vw;
+    }
+}
+
 
 /* AVA page AVA models Section ------------------------------------------------------
 */
+@media only screen and (min-width: 800px){
+
+
 
 .more-products {
     height: 90vh;
@@ -228,8 +389,60 @@ nav a:hover {
     font-size: 1.2vw;
     font-weight: 600;
 }
+}
 
 
+@media only screen and (max-width: 800px){
+
+
+    .more-products {
+        height: auto;
+        position: relative;
+    }
+    
+    .more-products img {
+        height: 30vw;
+        width: 30vw;
+        object-fit: cover;
+        border-radius: 2vw;
+    }
+    
+    .more-products-flexbox {
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 47vw 47vw;
+        text-align: center;
+        justify-content: space-around;
+        margin: 20vh 8vw 5vh;
+    }
+      
+    .more-products h4 {
+        position: absolute;
+        margin: 0;
+        font-size: 7vw;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+    
+    .more-products hr {
+        background-color: white;
+        border: none;
+    }
+    
+    .more-products h3 {
+        font-size: 3.5vw;
+        font-weight: 700;
+        margin: 1vh 0;
+    }
+    
+    #products-learnmore {
+        color: #3d8af7;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+
+}
 
 
 /* Footer ------------------------------------------------------
