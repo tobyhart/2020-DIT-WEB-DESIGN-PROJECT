@@ -278,3 +278,28 @@ if (productid == 26) {
     document.getElementById("checkout-first-price").innerHTML = "$1,999,999.99";
     document.getElementById("checkout-second-price").innerHTML = "$2,049,999.99";
 }
+
+
+
+if (productid == 27) {
+    document.getElementById("checkout-image").src = "Images/apps-gaming.jpg";
+    document.getElementById('checkout-product').innerHTML = 'Gaming Bundle';
+    document.getElementById("checkout-description").innerHTML = "Game in style with HillCorp's top 10 games bundle including 10 of HillCorp's best games.";
+    
+    document.getElementById("checkout-first-price").innerHTML = "$349.99";
+    document.getElementById("checkout-second-price").innerHTML = "$499.99";
+
+    document.getElementById("checkout-first-option").innerHTML = "PC";
+    document.getElementById("checkout-second-option").innerHTML = "Console";
+}
+if (productid == 28) {
+    document.getElementById("checkout-image").src = "Images/Headquarters-fancy.jpeg";
+    document.getElementById('checkout-product').innerHTML = 'Business Applications';
+    document.getElementById("checkout-description").innerHTML = "Boost your business with this bundle of business-related applications. Including the original version of Corpalytics.";
+    
+    document.getElementById("checkout-first-price").innerHTML = "$299.99";
+    document.getElementById("checkout-second-price").innerHTML = "$349.99";
+
+    document.getElementById("checkout-first-option").innerHTML = "Digital";
+    document.getElementById("checkout-second-option").innerHTML = "DVD";
+}
