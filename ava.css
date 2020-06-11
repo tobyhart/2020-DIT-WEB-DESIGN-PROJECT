@@ -225,6 +225,10 @@ header {
     color: #378aff;
     font-size: 1.5vw;
     font-weight: 600;
+    transition: 0.25s;
+}
+.ava-text-block a:hover {
+    font-size: 1.55vw;
 }
 
 @media only screen and (max-width: 800px){
@@ -301,6 +305,10 @@ header {
     font-weight: 600;
     top: 90%;
     width: 48%;
+    transition: 0.25s;
+}
+.ava-cautions-block a:hover {
+    font-size: 1.55vw;
 }
 
 .ava-cautions-block hr {
@@ -343,52 +351,58 @@ header {
 */
 @media only screen and (min-width: 800px){
 
+    .more-products {
+        height: 90vh;
+        position: relative;
+    }
 
+    .more-products img {
+        height: 13vw;
+        width: 13vw;
+        object-fit: cover;
+        border-radius: 2vw;
+        transition: 0.25s;
+    }
 
-.more-products {
-    height: 90vh;
-    position: relative;
-}
+    .more-products img:hover {
+        height: 13.5vw;
+        width: 13.5vw;
+        object-fit: cover;
+        border-radius: 2vw;
+    }
 
-.more-products img {
-    height: 13vw;
-    width: 13vw;
-    object-fit: cover;
-    border-radius: 2vw;
-}
+    .more-products-flexbox {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        margin: 33vh 6vw;
+    }
+    
+    .more-products h4 {
+        position: absolute;
+        margin: 0;
+        font-size: 3.5vw;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
 
-.more-products-flexbox {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    margin: 33vh 6vw;
-}
-  
-.more-products h4 {
-    position: absolute;
-    margin: 0;
-    font-size: 3.5vw;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} 
+    .more-products hr {
+        background-color: white;
+        border: none;
+    }
 
-.more-products hr {
-    background-color: white;
-    border: none;
-}
+    .more-products h3 {
+        font-size: 2.5vw;
+        font-weight: 600;
+        margin: 1vh 0 1vh;
+    }
 
-.more-products h3 {
-    font-size: 2.5vw;
-    font-weight: 600;
-    margin: 1vh 0 1vh;
-}
-
-#products-learnmore {
-    color: #3d8af7;
-    font-size: 1.2vw;
-    font-weight: 600;
-}
+    #products-learnmore {
+        color: #3d8af7;
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
 }
 
 
