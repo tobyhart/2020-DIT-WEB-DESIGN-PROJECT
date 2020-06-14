@@ -120,7 +120,7 @@ header {
     
     .hamburger-content {
         position: absolute;
-        background-color: none;
+        background: none;
         z-index: 1;
         text-align: center;
     }

@@ -118,7 +118,7 @@ header {
     
     .hamburger-content {
         position: absolute;
-        background-color: none;
+        background: none;
         z-index: 1;
         text-align: center;
     }
@@ -1609,7 +1609,6 @@ footer hr {
     float: left;
     font-size: 2.8vw;
     border-bottom: 0.25vw solid #5bd4b0;
-    border-bottom-width: 40%;
     margin-bottom: 2vw;
     padding: 0.8vw 0;
     width: 20vw;
