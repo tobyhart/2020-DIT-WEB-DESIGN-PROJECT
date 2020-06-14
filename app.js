@@ -12,7 +12,7 @@ if (productid == 1) {
     document.getElementById("checkout-second-price").innerHTML = "$249,999";
 } 
 if (productid == 2) {
-    document.getElementById("checkout-image").src = "Images/Hillcorp AVA app logo.png";
+    document.getElementById("checkout-image").src = "Images/Hillcorp-AVA-app-logo.png";
     document.getElementById('checkout-product').innerHTML = 'AVA App';
     document.getElementById("checkout-description").innerHTML = "Download the standard or platinum version of the AVA app. Platinum unlocks more features of AVA.";
     
@@ -22,7 +22,7 @@ if (productid == 2) {
     document.getElementById("checkout-second-price").innerHTML = "$249.99";
 }
 if (productid == 3) {
-    document.getElementById("checkout-image").src = "Images/Hillcorp Fayonette.png";
+    document.getElementById("checkout-image").src = "Images/Hillcorp-Fayonette.png";
     document.getElementById('checkout-product').innerHTML = 'Grand Fayonette';
     document.getElementById("checkout-description").innerHTML = "Order the latest version of HillCorp's Fayonette self-driving car: The Grand Fayonette. Add built-in AVA for the full experience.";
     
