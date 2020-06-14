@@ -161,6 +161,9 @@ header {
     #companyweirdo {
         transform: translate(-0.6vw, 0);
     }
+    #nav-profile {
+        display: none;
+    }
 }
 
 

@@ -109,7 +109,7 @@ header {
     }
     
     .sub-menu {
-        transform: translate(90vw, -2vh);
+        transform: translate(90vw, 0);
     }
     .sub-menu img {
         width: 70px;
@@ -163,6 +163,9 @@ header {
     #companyweirdo {
         transform: translate(-0.6vw, 0);
     }
+    #nav-profile {
+        display: none;
+    }
 }
 
 
@@ -170,10 +173,17 @@ header {
 */
 
 .hero-img {
-    background-image: url(Images/AI5.png);
     height: 100vh;
     background-position: center;
     background-size: cover;
+}
+
+#hero-video {
+    height: 100vh;
+    z-index: -10;
+    object-fit: cover;
+    position: absolute;
+    width: 100vw;
 }
 
 .hero-img h1{
