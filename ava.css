@@ -398,7 +398,7 @@ header {
         margin: 1vh 0 1vh;
     }
 
-    #products-learnmore {
+    .products-learnmore {
         color: #3d8af7;
         font-size: 1.2vw;
         font-weight: 600;
@@ -450,7 +450,7 @@ header {
         margin: 1vh 0;
     }
     
-    #products-learnmore {
+    .products-learnmore {
         color: #3d8af7;
         font-size: 2vw;
         font-weight: 600;

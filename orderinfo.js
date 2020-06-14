@@ -97,3 +97,12 @@ if (orderid == 25) {
 if (orderid == 26) {
     document.getElementById('order-name').innerHTML = 'HillCorp Astro';
 }
+
+
+
+if (orderid == 27) {
+    document.getElementById('order-name').innerHTML = 'Gaming Bundle';
+}
+if (orderid == 28) {
+    document.getElementById('order-name').innerHTML = 'Business Bundle';
+}

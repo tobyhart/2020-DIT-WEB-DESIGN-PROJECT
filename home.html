@@ -12,10 +12,10 @@
 
 <body>
     <header>
-        <a href="home.html"><img class="logo" src="Images/HillCorp Logo Dark.png"></a>
+        <a href="home.html"><img class="logo" src="Images/HillCorp-logo-dark.png" alt="logo"></a>
         
         <div class="dropdown">
-            <img id="nav-profile" src="">
+            <img id="nav-profile" src="" alt="">
             <div class="dropdown-content">
               <a href="index.html">Sign Out</a>
             </div>
@@ -30,13 +30,15 @@
                 <li id="login"><a id="loginbutton" href="login.html"></a></li>
             </ul> 
             <div class="sub-menu">
-                <img class="hamburger-menu" src="Images/hamburger-menu-dark.png">
+                <img class="hamburger-menu" src="Images/hamburger-menu-dark.png" alt="menu">
                 <div class="hamburger-content">
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="ava.html">AVA</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="company.html" id="companyweirdo">Company</a></li>
-                    <li><a href="login.html">Log-In</a></li>
+                    <ol>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="ava.html">AVA</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="company.html" id="companyweirdo">Company</a></li>
+                        <li><a href="login.html">Log-In</a></li>
+                    </ol>
                 </div>
             </div>
         </nav>
@@ -73,10 +75,10 @@
         <section class="fayonette-items">
             <h1><a href="checkout.html" onclick="localStorage.setItem('productid', '3')">The Fayonette</a></h1>
             <p><a href="checkout.html" onclick="localStorage.setItem('productid', '3')">HillCorp's latest self-driving car with built-in AVA software</a></p>
-            <a id="fayonette-learnmore" href="checkout.html" onclick="localStorage.setItem('productid', '3')">Learn More ></a>
+            <a class="fayonette-learnmore" href="checkout.html" onclick="localStorage.setItem('productid', '3')">Learn More ></a>
             <hr>
         </section>
-    <img id="fayonette" src="Images/HillCorp Fayonette.png">
+    <img class="fayonette" src="Images/HillCorp-Fayonette.png" alt="">
     </section>
 
     <section class="corpalytics-shop">
@@ -86,17 +88,17 @@
             <a id="corpalytics-learnmore" href="corpalytics.html">Learn More ></a>
             <hr>
         </section>
-    <img id="corpalytics" src="Images/Corpalytics 2.png">
+    <img id="corpalytics" src="Images/Corpalytics-2.png" alt="">
     </section>
 
     <section class="fayonette-shop">
         <section class="fayonette-items">
             <h1><a href="signup.html">HillCorp Infinity</a></h1>
             <p><a href="signup.html">Unlimited access to HillCorp's best features and extensions</a></p>
-            <a id="fayonette-learnmore" href="signup.html">Learn More ></a>
+            <a class="fayonette-learnmore" href="signup.html">Learn More ></a>
             <hr>
         </section>
-    <img id="fayonette" src="Images/HillCorp Infinity.png">
+    <img class="fayonette" src="Images/HillCorp-Infinity.png" alt="">
     </section>
 
     <section class="more-products">
@@ -104,27 +106,27 @@
         <hr>
         <section class="more-products-flexbox">
             <section id="devices">
-                <a href="shop.html#avalanche-shop-section"><img src="Images/HillCorp Phones.png"></a>
+                <a href="shop.html#avalanche-shop-section"><img src="Images/HillCorp-Phones.png" alt=""></a>
                 <h3><a href="shop.html#avalanche-shop-section">Devices</a></h3>
-                <a id="products-learnmore" href="shop.html#avalanche-shop-section">Learn More ></a>
+                <a class="products-learnmore" href="shop.html#avalanche-shop-section">Learn More ></a>
             </section>
 
             <section id="applications">
-                <a href="#"><img src="Images/Corpalytics 2.png"></a>
-                <h3><a href="#">Applications</a></h3>
-                <a id="products-learnmore" href="#">Learn More ></a>
+                <a href="shop.html#apps-shop-section"><img src="Images/Corpalytics-2.png" alt=""></a>
+                <h3><a href="shop.html#apps-shop-section">Applications</a></h3>
+                <a class="products-learnmore" href="shop.html#apps-shop-section">Learn More ></a>
             </section>
             
             <section id="transport">
-                <a href="shop.html#cars-shop-section"><img src="Images/HillCorp Fayonette.png"></a>
+                <a href="shop.html#cars-shop-section"><img src="Images/HillCorp-Fayonette.png" alt=""></a>
                 <h3><a href="shop.html#cars-shop-section">Transport</a></h3>
-                <a id="products-learnmore" href="shop.html#cars-shop-section">Learn More ></a>
+                <a class="products-learnmore" href="shop.html#cars-shop-section">Learn More ></a>
             </section>
             
             <section id="computers">
-                <a href="shop.html#computer-shop-section"><img src="Images/Hillcorp Computer.png"></a>
+                <a href="shop.html#computer-shop-section"><img src="Images/Hillcorp-Computer.png" alt=""></a>
                 <h3><a href="shop.html#computer-shop-section">Computers</a></h3>
-                <a id="products-learnmore" href="shop.html#computer-shop-section">Learn More ></a>
+                <a class="products-learnmore" href="shop.html#computer-shop-section">Learn More ></a>
             </section>
         </section>
     </section>
@@ -155,7 +157,7 @@
                 <ul>
                     <li><a href="shop.html#apps-shop-section">Shop</a></li>
                     <li><a href="ava.html">AVA</a></li>
-                    <li><a href=corpalytics.html>Corpalytics</a></li>
+                    <li><a href="corpalytics.html">Corpalytics</a></li>
                 </ul>
             </div>
 
@@ -209,7 +211,7 @@
         <hr>
         <p id="copyright">Copyright © 2020 HillCorp Inc. All Rights Reserved</p>
         <section id="nz">
-            <img id="flag" src="Images/NZFLAG.png">
+            <img id="flag" src="Images/NZFLAG.png" alt="">
             <p>New Zealand</p>
         </section>
     </footer>

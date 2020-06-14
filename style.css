@@ -134,6 +134,10 @@ header {
     .hamburger-content li {
         background-color: #f2f2f2;
     }
+
+    .hamburger-content ol {
+        list-style: none;
+    }
     
     .hamburger-content li:hover {
         background-color: #ddd;
@@ -398,7 +402,7 @@ header {
     object-fit: cover;
 }
   
-.fayonette-shop h1, .fayonette-shop p, #fayonette-learnmore {
+.fayonette-shop h1, .fayonette-shop p, .fayonette-learnmore {
     position: absolute;
     margin: 0;
     font-size: 3.5vw;
@@ -412,7 +416,7 @@ header {
     top: 51.5%;
 }
 
-#fayonette-learnmore {
+.fayonette-learnmore {
     font-size: 1.2vw;
     top: 57%;
     color: #3d8af7;
@@ -420,7 +424,7 @@ header {
     transition: 0.25s;
 }
 
-#fayonette-learnmore:hover {
+.fayonette-learnmore:hover {
     font-size: 1.3vw;
 }
 
@@ -452,7 +456,7 @@ header {
         top: 52.5%;
     }
     
-    #fayonette-learnmore {
+    .fayonette-learnmore {
         font-size: 1.7vw;
         top: 57%;
     }
@@ -588,7 +592,7 @@ header {
     margin: 1vh 0 1vh;
 }
 
-#products-learnmore {
+.products-learnmore {
     color: #3d8af7;
     font-size: 1.2vw;
     font-weight: 600;
@@ -642,7 +646,7 @@ header {
         margin: 1vh 0;
     }
     
-    #products-learnmore {
+    .products-learnmore {
         color: #3d8af7;
         font-size: 2vw;
         font-weight: 600;
@@ -942,6 +946,22 @@ footer hr {
     left: 61%;
     letter-spacing: 0.1vw;
 }
+.copyright-wikipedia{
+    position: relative;
+    font-size: 1vw;
+    color: #7a7a7a;
+    font-weight: 500;
+    margin-bottom: 1vw;
+    text-align: center;
+    letter-spacing: 0.1vw;
+    z-index: 10;
+}
+#first-wiki {
+    margin-top: 3vw;
+}
+#second-wiki {
+    margin-bottom: 5vw;
+}
 #company-third-section img{
     height: 46vw;
 }
@@ -1013,7 +1033,7 @@ footer hr {
 /* ai Page cautions Block Section ------------------------------------------------------
 */
 
-#ai-split {
+.ai-split {
     width: 80%;
     height: 2px;
     background: black;
